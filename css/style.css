@@ -1,0 +1,300 @@
+/* reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+
+}
+
+/* ----- */
+
+:root {
+
+  font-size: clamp(14px, 3vw, 24px);
+}
+
+body {
+  background-image: url('../img/20527896.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+header {
+
+  justify-content: left;
+  padding: 10vw;
+  background-color: #212121;
+  color: #fff;
+  background: linear-gradient(0deg, #21212100 0%, #212121 15%);
+}
+
+h1 {
+  color: silver;
+  font-size: 4vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.logo img {
+  width: 100%;
+  height: 20%;
+  margin-right: 10px;
+  font-size: 5vw;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  vertical-align: top;
+  width: 50%;
+  box-sizing: border-box;
+  font-size: clamp(16px, 4vw, 24px);
+
+
+}
+
+.container img {
+
+  max-width: 50vw;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-evenly;
+  vertical-align: top;
+  width: 50%;
+  box-sizing: border-box;
+  color: silver;
+  font-size: 2vw;
+  text-shadow: 0 0 3vw silver;
+
+
+
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  width: 150%;
+  height: 150px;
+  font-size: clamp(16px, 4vw, 24px);
+  resize: both;
+  font-size: 1.5vw;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+form input[type="submit"] {
+  background-color: silver;
+  color: #212121;
+  border: none;
+  padding: 10px;
+  font-size: 2vw;
+  cursor: pointer;
+  text-shadow: none;
+  border-radius: 20px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #212121;
+  color: silver;
+
+}
+
+
+
+p {
+  color: silver;
+  display: flex;
+  font-size: clamp(14px, 3vw, 24px);
+  text-shadow: 0 0 3vw silver;
+
+}
+
+
+.sobre {
+  color: silver;
+  display: flex;
+  flex-direction: column;
+  font-size: 2vw;
+  justify-self: left;
+  width: 25%;
+  align-self: flex-start;
+
+}
+
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galeria label {
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+
+.galeria img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria input[type="checkbox"] {
+  display: none;
+}
+
+.galeria .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.galeria input[type="checkbox"]:checked+.lightbox {
+  display: flex;
+}
+
+.galeria .fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.galeria .lightbox img {
+  max-width: 90vw;
+  max-height: 90vw;
+}
+
+nav {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+
+nav ul li a {
+  font-size: clamp(16px, 4vw, 24px);
+  text-decoration: underline;
+  color: #fff;
+
+}
+
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5vw;
+}
+
+
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  background-color: #212121;
+  color: #fff;
+  background: linear-gradient(0deg, #212121 15%, #21212100 100%);
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+address p {
+  font-size: clamp(14px, 3vw, 24px);
+  margin-bottom: 10px;
+
+}
+
+address li {
+  font-size: 16px;
+
+
+
+}
+
+ul a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 10px;
+  align-items: end;
+
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
