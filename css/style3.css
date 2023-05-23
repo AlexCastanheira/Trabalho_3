@@ -17,6 +17,15 @@ html {
     list-style: none;
 }
 
+/* Definição das variáveis de cor */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-silver: silver;
+    --color-dark-gray: #555555;
+    --color-light-gray: #cccccc;
+  }
+
 /* Grid */
 
 .container {
@@ -39,10 +48,10 @@ html {
 .one {
     grid-area: one;
     display: flex;
-    background-color: #212121;
+    background-color: var(--color-black);
     grid-row: 1 / span 2;
-    background: linear-gradient(0deg, #21212100 0%, #212121 25%);
-}
+    background: linear-gradient(0deg, #00000000 0%, var(--color-black) 25%);
+  }
 
 .two {
     grid-area: two;
@@ -62,9 +71,9 @@ html {
 }
 
 h1 {
-    color: silver;
+    color: var(--color-silver);
     font-size: 4vw;
-}
+  }
 
 .logo {
     display: flex;
@@ -92,15 +101,15 @@ h1 {
     display: block;
     margin-right: 20px;
     font-size: clamp(16px, 4vw, 24px);
-    background-color: black;
+    background-color: var(--color-black);
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     transition: background-color 0.3s ease;
-}
-
-.menu li a:hover {
-    background-color: #555;
-}
+  }
+  
+  .menu li a:hover {
+    background-color: var(--color-dark-gray);
+  }
 
 main {
     padding: 40px;
@@ -108,11 +117,10 @@ main {
 }
 
 h2 {
-    color: silver;
+    color: var(--color-silver);
     font-size: 4vw;
-
     margin-bottom: 20px;
-}
+  }
 
 form {
     display: flex;
@@ -121,7 +129,7 @@ form {
 }
 
 form label {
-    color: silver;
+    color: var(--color-silver);;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -148,10 +156,10 @@ form input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #000000;
-    color: white;
+    background-color: var(--color-black);
+    color: var(--color-white);
     padding: 20px;
-}
+  }
 
 footer p {
     font-size: 18px;
@@ -195,7 +203,7 @@ footer ul li a:hover {
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
-        /* Altera para uma �nica coluna */
+        /* Altera para uma �nica coluna */
         grid-template-areas:
             "one"
             "two"
